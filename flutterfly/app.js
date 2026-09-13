@@ -97,24 +97,3 @@ var scene7 = new ScrollMagic.Scene({
 })
 .setClassToggle('#img2', 'active')
 .addTo(controller);
-
-document.querySelectorAll('[data-audio-toggle]').forEach(function (button) {
-    var media = document.querySelector(button.getAttribute('data-audio-toggle'));
-    if (!media) {
-        return;
-    }
-
-    button.addEventListener('click', function (event) {
-        event.preventDefault();
-        event.stopPropagation();
-        var turnOn = media.muted || media.volume === 0;
-        media.muted = !turnOn;
-        media.volume = turnOn ? 1 : 0;
-        if (turnOn && typeof media.play === 'function') {
-            media.play().catch(function () {});
-        }
-        button.setAttribute('aria-pressed', turnOn ? 'true' : 'false');
-        button.textContent = turnOn ? 'Sound on' : 'Sound off';
-        button.setAttribute('aria-label', turnOn ? 'Turn soundtrack off' : 'Turn soundtrack on');
-    });
-});

@@ -224,31 +224,3 @@
         window.addEventListener('load', initGalaxy, { once: true });
     }
 })();
-
-(function () {
-    "use strict";
-
-    document.querySelectorAll('[data-audio-toggle]').forEach(function (button) {
-        var video = document.querySelector(button.getAttribute('data-audio-toggle'));
-        if (!video) {
-            return;
-        }
-
-        button.addEventListener('click', function (event) {
-            event.preventDefault();
-            event.stopPropagation();
-            var turnOn = video.muted || video.volume === 0;
-            video.muted = !turnOn;
-            video.volume = turnOn ? 1 : 0;
-            if (turnOn) {
-                var playAttempt = video.play();
-                if (playAttempt && typeof playAttempt.catch === 'function') {
-                    playAttempt.catch(function () {});
-                }
-            }
-            button.setAttribute('aria-pressed', turnOn ? 'true' : 'false');
-            button.textContent = turnOn ? 'Sound on' : 'Sound off';
-            button.setAttribute('aria-label', turnOn ? 'Turn soundtrack off' : 'Turn soundtrack on');
-        });
-    });
-})();
