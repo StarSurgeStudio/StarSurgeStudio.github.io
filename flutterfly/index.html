@@ -22,20 +22,47 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Gafata&family=Gruppo&family=Lato:ital@0;1&display=swap" rel="stylesheet">
-    <link href="http://fonts.cdnfonts.com/css/green-love" rel="stylesheet">
+    <link href="https://fonts.cdnfonts.com/css/green-love" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
-    <title>FlutterFly</title>
+    <title>FlutterFly – Free Butterfly Adventure | StarSurge</title>
     <link rel="icon" type="image/x-icon" href="https://starsurgestudio.github.io/imgs/ffly.jpg">
 
     <!-- Meta tags -->
-	<meta name="description" content="FlutterFly is a free game developed by StarSurge in which a little butterfly is trying to cross the forest passing through hoops. The butterfly is under the control of gravity and uses your quick reflexes and controls."/>
-	<link rel="canonical" href="https://flutterfly.starsurge.in"/>
-	<meta property="og:title" content="FlutterFly"/>
-	<meta property="og:description" content="FlutterFly is a free game developed by StarSurge in which a little butterfly is trying to cross the forest passing through hoops. The butterfly is under the control of gravity and uses your quick reflexes and controls."/>
-	<meta property="og:url" content="https://flutterfly.starsurge.in"/>
-	<meta property="og:site_name" content="FlutterFly"/>
+	<meta name="robots" content="index, follow, max-image-preview:large">
+	<meta name="description" content="FlutterFly is a free one-tap mobile game from StarSurge. Guide a butterfly through forest hoops, play offline, and challenge high scores on Google Play."/>
+	<link rel="canonical" href="https://starsurgestudio.github.io/flutterfly/"/>
+	<meta property="og:title" content="FlutterFly – Free Butterfly Adventure | StarSurge"/>
+	<meta property="og:description" content="A free one-tap Android game from StarSurge. Help a butterfly hop through forest hoops."/>
+	<meta property="og:url" content="https://starsurgestudio.github.io/flutterfly/"/>
+	<meta property="og:site_name" content="StarSurge"/>
 	<meta property="og:type" content="website"/>
-	<meta name="keywords" content="Flutterfly, Flutterfly android, Flutterfly starsurge, FlutterFly mobile game, StarSurge game, Flutterfly game, FlutterFly"/>
+	<meta property="og:image" content="https://starsurgestudio.github.io/imgs/ff-square-poster.jpg"/>
+	<meta name="twitter:card" content="summary_large_image"/>
+	<meta name="twitter:title" content="FlutterFly – Free Butterfly Adventure | StarSurge"/>
+	<meta name="twitter:description" content="A free one-tap Android game from StarSurge. Help a butterfly hop through forest hoops."/>
+	<meta name="twitter:image" content="https://starsurgestudio.github.io/imgs/ff-square-poster.jpg"/>
+	<script type="application/ld+json">
+	{
+      "@context": "https://schema.org",
+      "@type": "VideoGame",
+      "name": "FlutterFly",
+      "url": "https://starsurgestudio.github.io/flutterfly/",
+      "image": "https://starsurgestudio.github.io/imgs/ff-square-poster.jpg",
+      "description": "A free one-tap mobile game where a butterfly hops through forest hoops.",
+      "author": { "@type": "Organization", "name": "StarSurge", "url": "https://starsurgestudio.github.io/" },
+      "gamePlatform": ["Android"],
+      "playMode": "SinglePlayer",
+      "applicationCategory": "GameApplication",
+      "operatingSystem": "Android",
+      "trailer": { "@type": "VideoObject", "name": "FlutterFly trailer", "embedUrl": "https://www.youtube.com/embed/psLM1DC3tGI" },
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "USD",
+        "url": "https://play.google.com/store/apps/details?id=com.StarSurge.FlutterFly"
+      }
+    }
+	</script>
 </head>
 
 <body class="body-custom">
@@ -55,10 +82,12 @@
                 <span class="m_scroll_arrows trei"></span>
             </div>
     </div>
-        <video width="1080" height="720" preload autoplay muted id="Video">
-            <source src="https://starsurgestudio.github.io/imgs/Flutterfly Launch Intro (1)-1.webm" type="video/webm">
+        <video width="1080" height="720" preload="auto" autoplay muted loop playsinline id="Video">
+            <source src="https://starsurgestudio.github.io/imgs/FlutterFly_Launch_intro.mp4" type="video/mp4">
+            <source src="https://starsurgestudio.github.io/imgs/Flutterfly%20Launch%20Intro%20(1)-1.webm" type="video/webm">
             Your browser does not support HTML5 video.
         </video>
+        <button type="button" class="audio-toggle" data-audio-toggle="#Video" aria-pressed="false" aria-label="Turn FlutterFly soundtrack on">Sound off</button>
     </div>
     <header>
     <nav class="navbar navbar-expand-md navbar-dark navbar-custom" id="ftco-nav">

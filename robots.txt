@@ -1,0 +1,7 @@
+User-agent: *
+Allow: /
+
+Disallow: /pages/thanks.html
+Disallow: /dist/
+
+Sitemap: https://starsurgestudio.github.io/sitemap.xml

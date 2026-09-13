@@ -1,11 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <!-- Links and scripts -->
-    <link rel="stylesheet" href="./style.css">
-    <script type="module" src="./app.js"></script>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+    <meta name="theme-color" content="#000000">
+    <link rel="stylesheet" href="./style.css">
+    <script type="module" src="./app.js"></script>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
@@ -17,15 +18,74 @@
     <link rel="icon" type="image/ico" href="imgs/favi.ico">
 
     <!-- Meta tags -->
-    <title>StarSurge</title>
-    <meta name="description" content="StarSurge is a group of passionate, multi-facetted talent creating video games, based in India."/>
-    <link rel="canonical" href="https://starsurgestudio.github.io"/>
-    <meta property="og:title" content="StarSurge"/>
-    <meta property="og:description" content="StarSurge is a group of passionate, multi-facetted talent creating video games, based in India."/>
-    <meta property="og:url" content="https://starsurgestudio.github.io"/>
-    <meta property="og:site_name" content="StarSurge"/>
-    <meta property="og:type" content="website"/>
-    <meta name="keywords" content="Game Development, Mobile Game Development, Game Outsourcing, StarSurge"/>
+    <title>StarSurge Studio | Indie Game Developers in India</title>
+    <meta name="description" content="StarSurge is an indie game studio in India. Play FlutterFly on Google Play, follow Project: GraviSort, and explore our original games and Unity assets.">
+    <link rel="canonical" href="https://starsurgestudio.github.io/">
+    <link rel="sitemap" type="application/xml" title="Sitemap" href="https://starsurgestudio.github.io/sitemap.xml">
+    <meta property="og:locale" content="en_IN">
+    <meta property="og:title" content="StarSurge Studio | Indie Game Developers in India">
+    <meta property="og:description" content="StarSurge is an indie game studio in India. Play FlutterFly on Google Play and follow our upcoming title, Project: GraviSort.">
+    <meta property="og:url" content="https://starsurgestudio.github.io/">
+    <meta property="og:site_name" content="StarSurge">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://starsurgestudio.github.io/imgs/ff-square-poster.jpg">
+    <meta property="og:image:alt" content="FlutterFly cover art from StarSurge Studio">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="StarSurge Studio | Indie Game Developers in India">
+    <meta name="twitter:description" content="Indie game studio in India. Play FlutterFly, a free one-tap butterfly adventure on Google Play.">
+    <meta name="twitter:image" content="https://starsurgestudio.github.io/imgs/ff-square-poster.jpg">
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "Organization",
+          "@id": "https://starsurgestudio.github.io/#studio",
+          "name": "StarSurge",
+          "alternateName": ["StarSurge Studio", "StarSurge Games"],
+          "url": "https://starsurgestudio.github.io/",
+          "logo": "https://starsurgestudio.github.io/imgs/logo_icon.png",
+          "email": "contact@starsurge.in",
+          "foundingDate": "2021",
+          "description": "Indie game studio in India creating original mobile games, including FlutterFly.",
+          "address": { "@type": "PostalAddress", "addressCountry": "IN" },
+          "sameAs": [
+            "https://www.linkedin.com/company/starsurge",
+            "https://star-surge.itch.io/",
+            "https://starsurgestudio.tumblr.com",
+            "https://www.youtube.com/channel/UCpcyGBUKSRoKk39mqkN97IQ/",
+            "https://discord.gg/MNAZP5Pk",
+            "https://www.facebook.com/StarSurge-111122664774245"
+          ]
+        },
+        {
+          "@type": "WebSite",
+          "@id": "https://starsurgestudio.github.io/#website",
+          "url": "https://starsurgestudio.github.io/",
+          "name": "StarSurge",
+          "publisher": { "@id": "https://starsurgestudio.github.io/#studio" }
+        },
+        {
+          "@type": "VideoGame",
+          "name": "FlutterFly",
+          "url": "https://starsurgestudio.github.io/flutterfly/",
+          "image": "https://starsurgestudio.github.io/imgs/ff-square-poster.jpg",
+          "description": "A free one-tap mobile game where you guide a butterfly through a forest of hoops.",
+          "author": { "@id": "https://starsurgestudio.github.io/#studio" },
+          "gamePlatform": ["Android"],
+          "playMode": "SinglePlayer",
+          "applicationCategory": "GameApplication",
+          "operatingSystem": "Android",
+          "offers": {
+            "@type": "Offer",
+            "price": "0",
+            "priceCurrency": "USD",
+            "url": "https://play.google.com/store/apps/details?id=com.StarSurge.FlutterFly"
+          }
+        }
+      ]
+    }
+    </script>
 </head>
 
 <!-- Body -->
@@ -124,16 +184,18 @@
                         <div class="carousel-inner">
                             <div class="carousel-item active">
                                 <div class="overlay-cont">
-                                    <a class="video-container" href="https://flutterfly.starsurge.in/"></a>
-                                    <a href="https://flutterfly.starsurge.in/">
-                                        <video class="mx-auto d-block" autoplay muted loop id="sliderVideo" poster="imgs/ff-poster-static0.jpg">
+                                    <a class="video-container" href="./flutterfly/" aria-label="Open FlutterFly"></a>
+                                    <a href="./flutterfly/">
+                                        <video class="mx-auto d-block" autoplay muted loop playsinline id="sliderVideo" poster="imgs/ff-poster-static0.jpg">
+                                            <source src="imgs/FlutterFly_Launch.mp4" type="video/mp4">
                                             <source src="https://cdn.kapwing.com/final_61eeb8945364e500371297c8_951616.mp4" type="video/mp4">
                                             Your browser does not support HTML5 video.
                                         </video>
                                     </a>
+                                    <button type="button" class="audio-toggle" data-audio-toggle="#sliderVideo" aria-pressed="false" aria-label="Turn FlutterFly soundtrack on">Sound off</button>
                                     <div class="carousel-caption d-none d-md-block">
-                                        <span class="c-caption"><h2><a class="slider-heading" href="https://flutterfly.starsurge.in/">FlutterFly</a></h2></span>
-                                        <p><a class="slider-subtitle" href="https://flutterfly.starsurge.in/">Our very first game has just been released! Check it out!</a></p>
+                                        <span class="c-caption"><h2><a class="slider-heading" href="./flutterfly/">FlutterFly</a></h2></span>
+                                        <p><a class="slider-subtitle" href="./flutterfly/">Our first game is out on Google Play. Play the free butterfly adventure.</a></p>
                                     </div>
                                 </div>
                             </div>
@@ -158,12 +220,25 @@
                 <div class="hero-content-wrapper">
                     <div class="hero-text">
                         <h2>We bring cool new<br/> worlds to life for you to <span class="adv">adventure</span></h2>
-                        <p>StarSurge is a small game development studio based in India. We released our first game, <a href="https://flutterfly.starsurge.in/">FlutterFly</a>, in January 2022, and we're currently working on our next title, Project: GraviSort.</p>
+                        <p>StarSurge is an indie game studio based in India. We released our first title, <a href="./flutterfly/">FlutterFly</a>, in January 2022, and we are currently building our next game, Project: GraviSort.</p>
                     </div>
                     <div class="hero-image">
-                        <img src="imgs/top_image.png" alt="Game illustration" class="hero-img" />
+                        <img src="imgs/top_image.png" alt="StarSurge game illustration" class="hero-img" />
                     </div>
                 </div>
+            </section>
+
+            <section class="studio-discover" aria-labelledby="discover-heading">
+                <h2 id="discover-heading">Games, team, and studio</h2>
+                <p>StarSurge Studio makes original mobile games. FlutterFly is a free one-tap butterfly adventure on Google Play. Project: GraviSort is in development. Browse our titles, meet the team, or download Unity assets and press art.</p>
+                <ul class="studio-discover-list">
+                    <li><a href="./flutterfly/">Play FlutterFly</a></li>
+                    <li><a href="https://play.google.com/store/apps/details?id=com.StarSurge.FlutterFly">FlutterFly on Google Play</a></li>
+                    <li><a href="pages/titles.html">Released games</a></li>
+                    <li><a href="pages/upcoming.html">Upcoming games</a></li>
+                    <li><a href="pages/team.html">The StarSurge team</a></li>
+                    <li><a href="pages/contact.html">Contact the studio</a></li>
+                </ul>
             </section>
         </main>
 
@@ -177,19 +252,19 @@
                 </div>
                 <!-- Right -->
                 <div class="socicons">
-                    <a href="https://www.facebook.com/StarSurge-111122664774245" class="me-4 text-reset" target="_blank">
+                    <a href="https://www.facebook.com/StarSurge-111122664774245" class="me-4 text-reset" target="_blank" rel="noopener" aria-label="StarSurge on Facebook">
                         <i class="fab fa-facebook"></i>
                     </a>
-                    <a href="https://discord.gg/MNAZP5Pk" class="me-4 text-reset" target="_blank">
+                    <a href="https://discord.gg/MNAZP5Pk" class="me-4 text-reset" target="_blank" rel="noopener" aria-label="StarSurge Discord">
                         <i class="fab fa-discord"></i>
                     </a>
-                    <a href="https://www.youtube.com/channel/UCpcyGBUKSRoKk39mqkN97IQ/" class="me-4 text-reset" target="_blank">
+                    <a href="https://www.youtube.com/channel/UCpcyGBUKSRoKk39mqkN97IQ/" class="me-4 text-reset" target="_blank" rel="noopener" aria-label="StarSurge on YouTube">
                         <i class="fab fa-youtube"></i>
                     </a>
-                    <a href="https://www.linkedin.com/company/starsurge" class="me-4 text-reset" target="_blank">
+                    <a href="https://www.linkedin.com/company/starsurge" class="me-4 text-reset" target="_blank" rel="noopener" aria-label="StarSurge on LinkedIn">
                         <i class="fab fa-linkedin"></i>
                     </a>
-                    <a href="https://starsurgestudio.tumblr.com" class="me-4 text-reset" target="_blank">
+                    <a href="https://starsurgestudio.tumblr.com" class="me-4 text-reset" target="_blank" rel="noopener" aria-label="StarSurge blog on Tumblr">
                         <i class="fab fa-tumblr-square"></i>
                     </a>
                 </div>
@@ -242,7 +317,7 @@
 
             <!-- Copyright -->
             <div class="text-center p-4 copyright">
-                © 2022 StarSurge. All rights reserved.
+                © 2021–2026 StarSurge. All rights reserved.
             </div>
             <!-- Copyright -->
         </footer>
