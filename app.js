@@ -53,6 +53,58 @@
 (function () {
     "use strict";
 
+    var carousel = document.querySelector("[data-asset-carousel]");
+    if (!carousel) {
+        return;
+    }
+
+    var pages = Array.prototype.slice.call(carousel.querySelectorAll("[data-asset-page]"));
+    var pageButtons = Array.prototype.slice.call(carousel.querySelectorAll("[data-asset-page-button]"));
+    var count = carousel.querySelector("[data-asset-count]");
+    var previousButton = carousel.querySelector("[data-asset-prev]");
+    var nextButton = carousel.querySelector("[data-asset-next]");
+    var currentPage = 0;
+
+    function showPage(pageIndex) {
+        currentPage = (pageIndex + pages.length) % pages.length;
+        pages.forEach(function (page, index) {
+            var isActive = index === currentPage;
+            page.hidden = !isActive;
+            page.setAttribute("aria-hidden", isActive ? "false" : "true");
+        });
+        pageButtons.forEach(function (button, index) {
+            var isActive = index === currentPage;
+            button.classList.toggle("is-active", isActive);
+            if (isActive) {
+                button.setAttribute("aria-current", "true");
+            } else {
+                button.removeAttribute("aria-current");
+            }
+        });
+        if (count) {
+            count.textContent = (currentPage + 1) + " / " + pages.length;
+        }
+        previousButton.disabled = pages.length < 2;
+        nextButton.disabled = pages.length < 2;
+    }
+
+    previousButton.addEventListener("click", function () {
+        showPage(currentPage - 1);
+    });
+    nextButton.addEventListener("click", function () {
+        showPage(currentPage + 1);
+    });
+    pageButtons.forEach(function (button) {
+        button.addEventListener("click", function () {
+            showPage(Number(button.getAttribute("data-asset-page-button")));
+        });
+    });
+    showPage(0);
+})();
+
+(function () {
+    "use strict";
+
     var canvas = document.getElementById('galaxy-canvas');
     if (!canvas) {
         return;
